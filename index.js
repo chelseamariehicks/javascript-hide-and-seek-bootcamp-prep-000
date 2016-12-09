@@ -3,17 +3,20 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.querySelector('#nested.target')
+return document.getElementById('nested').querySelector('div.target')
 }
 
 function increaseRankBy(n){
-var rankedLists = document.querySelectorAll('.ranked-list')
-let children = firstList.children
+const list = document.querySelectorAll('.ranked-list')
 
-for(let i=0, l = children.length; i <l; i++) {}
+for(let i=0, l = list.length; i <l; i++) {
+  list[i].innerHTML = (i).toString()}
 }
 
 function deepestChild() {
-console.log(deepestChild().innerHTML)
+  var parent = document.querySelector('#grand-node')
+  var child = parent.querySelector('div')
+
+return child
 
 }
