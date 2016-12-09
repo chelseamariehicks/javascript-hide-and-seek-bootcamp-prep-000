@@ -17,6 +17,8 @@ function deepestChild() {
   var parent = document.querySelector('#grand-node')
   var child = parent.querySelector('div')
 
-return child
-
+while (child) { parent = child;
+  child = parent.querySelector('div')
+}
+return parent
 }
